@@ -26,7 +26,7 @@ jobs:
       
       # Run npm install and build on our code
       - run: npm install
-      - run: npm run build:prod --if-present
+      - run: npm run buildprod --if-present
       
       # Deploy to Netlify using our dev secrets
       - name: Deploy to netlify
