@@ -10,7 +10,8 @@
     "test:nowatch": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
