@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
-import * as _ from 'lodash';
+import { merge } from 'lodash-es';
 
 import { FuseNavigationItem } from '@fuse/types';
 
@@ -387,7 +387,7 @@ export class FuseNavigationService
         }
 
         // Merge the navigation properties
-        _.merge(navigationItem, properties);
+        merge(navigationItem, properties);
 
         // Trigger the observable
         this._onNavigationItemUpdated.next(true);
