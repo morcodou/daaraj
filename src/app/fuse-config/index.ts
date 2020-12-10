@@ -21,19 +21,19 @@ export const fuseConfig: FuseConfig = {
             folded             : false,
             hidden             : false,
             position           : 'left',
-            variant            : 'vertical-style-1'
+            variant            : 'vertical-style-2'
         },
         toolbar  : {
             customBackgroundColor: false,
             background           : 'fuse-white-500',
-            hidden               : false,
+            hidden               : true,
             position             : 'below-static'
         },
         footer   : {
             customBackgroundColor: true,
             background           : 'fuse-navy-900',
             hidden               : false,
-            position             : 'below-fixed'
+            position             : 'above'
         },
         sidepanel: {
             hidden  : false,
